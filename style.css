@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #151929;
+    position: relative;
+}
+header #headerSVG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.hexagons {
+    /* filter: drop-shadow(3px 2px 2px #9f9f9f9a); */
+    stroke: none;
+    fill: #353959;
+    stroke-linejoin: round;
+}
