@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK-LOGO</title>
+    <style>
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        body {
+            background-color: #191f2f;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* border: 1px solid red; */
+        }
+        #logo {
+            width: 10vw;
+        }
+        .bg-hexas {
+            transition: .5s;
+        }
+        .bg-hexas:hover {
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="./dk-logo-white-shadow.png" alt="">
+    <svg>
+        <defs>
+            
+            <radialGradient id="rad" cx=".5" cy=".5" r=".5">
+                <stop offset=".8" stop-color="rgba(0,0,0,0)"/>
+                <stop offset="1" stop-color="rgba(0,0,0, 0.2)"/>
+            </radialGradient>
+
+            <filter id="shadow">
+                <feDropShadow
+                dx="0" dy="0"
+                stdDeviation="2"
+                flood-opacity=".6"
+                flood-color="black"/>
+            </filter>
+
+            <filter id="blur">
+                <feGaussianBlur in="StrokePaint" stdDeviation=".1" />
+            </filter>
+
+            
+        </defs>
+
+    </svg>
+    <script src="hexas.js" defer></script>
+</body>
+</html>
